@@ -6,7 +6,7 @@
     "test": "test"
   },
   "scripts": {
-    "api-test-QA": "newman run test/Postman-Newman-Jenkins.postman_collection.json"
+    "api-test-QA": "newman run test/Postman-Newman-Jenkins.postman_collection.json -e ARCAMicroServiceTest.postman_environment.json --insecure  --ssl-client-cert qa_cert.pem --ssl-client-key qa_key.key"
   },
   "author": "Emem",
   "dependencies": {
