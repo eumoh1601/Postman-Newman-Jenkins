@@ -1,0 +1,1941 @@
+{
+	"info": {
+		"_postman_id": "f5074a8d-c130-42be-8c8f-768b4b41f919",
+		"name": "Postman-Newman-Jenkins",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Amount Block Unblock Gateway",
+			"description": "",
+			"item": [
+				{
+					"name": "Request amount BlockUnblock with valid additionalInformation",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "588a369f-b252-4b95-b83b-118a5e9ba9ae",
+								"type": "text/javascript",
+								"exec": [
+									"",
+									"",
+									"tests[\"Status code is 201\"] = responseCode.code === 201",
+									"",
+									"",
+									"",
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"additionalInformation\": \"string\",      \r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"creationDateTime\": \"2018-05-07T11:52:47.798Z\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}200\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n        \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    \r\n"
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with valid amount",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7af2947c-d5af-4919-93f0-4b6c5e52e9fa",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 201\"] = responseCode.code === 201"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"additionalInformation\": \"string\",\r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}201\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n        \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    \r\n"
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with valid channelCode",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7af2947c-d5af-4919-93f0-4b6c5e52e9fa",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 201\"] = responseCode.code === 201"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"creationDateTime\": \"2018-05-07T11:52:47.798Z\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"additionalInformation\": \"string\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}202\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n        \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    \r\n"
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with valid creationDateTime",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7af2947c-d5af-4919-93f0-4b6c5e52e9fa",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 201\"] = responseCode.code === 201"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"creationDateTime\": \"2018-05-07T11:52:47.798Z\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"additionalInformation\": \"string\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}203\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n        \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    \r\n    \r\n    \r\n"
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with valid currency",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7af2947c-d5af-4919-93f0-4b6c5e52e9fa",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 201\"] = responseCode.code === 201"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"creationDateTime\": \"2018-05-07T11:52:47.798Z\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"additionalInformation\": \"string\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}204\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n        \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    \r\n"
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with valid instructedInstitutionCode",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7af2947c-d5af-4919-93f0-4b6c5e52e9fa",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 201\"] = responseCode.code === 201"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"creationDateTime\": \"2018-05-07T11:52:47.798Z\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}202\",\r\n        \"targetAccountName\": \"banke@yahoo.com\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n        \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    \r\n    \r\n"
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with valid referenceCode",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7af2947c-d5af-4919-93f0-4b6c5e52e9fa",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 201\"] = responseCode.code === 201"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"creationDateTime\": \"2018-05-07T11:52:47.798Z\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"additionalInformation\": \"string\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}206\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n        \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    \r\n"
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with valid requestId",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7af2947c-d5af-4919-93f0-4b6c5e52e9fa",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 201\"] = responseCode.code === 201"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"creationDateTime\": \"2018-05-07T11:52:47.798Z\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"additionalInformation\": \"string\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}207\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n        \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    "
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with valid targetAccountNumber",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7af2947c-d5af-4919-93f0-4b6c5e52e9fa",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 201\"] = responseCode.code === 201"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"creationDateTime\": \"2018-05-07T11:52:47.798Z\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"additionalInformation\": \"string\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}208\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n        \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    "
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with valid targetBankVerificationNumber",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7af2947c-d5af-4919-93f0-4b6c5e52e9fa",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 201\"] = responseCode.code === 201"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"creationDateTime\": \"2018-05-07T11:52:47.798Z\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n       \"additionalInformation\": \"string\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}209\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n        \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    "
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with valid targetVerificationNumberType",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7af2947c-d5af-4919-93f0-4b6c5e52e9fa",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 201\"] = responseCode.code === 201"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"creationDateTime\": \"2018-05-07T11:52:47.798Z\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n       \"additionalInformation\": \"string\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}209\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n        \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    "
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with valid type",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7af2947c-d5af-4919-93f0-4b6c5e52e9fa",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 201\"] = responseCode.code === 201"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"additionalInformation\": \"string\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}210\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n        \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    "
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with no  additionalInformation",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f9508818-8c71-42ce-82dd-64dce6031061",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 201\"] = responseCode.code === 201"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " { \r\n       \"additionalInformation\": \"\",\r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"creationDateTime\": \"2018-05-07T11:52:47.798Z\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"additionalInformation\": \"string\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}211\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n        \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    "
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with no  amount",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "8a33eb38-c0d4-498f-9bfd-42b6b869f35f",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 400\"] = responseCode.code === 400"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n       \"additionalInformation\": \"string\",\r\n        \r\n        \"channelCode\": 2,\r\n        \"creationDateTime\": \"2018-05-07T11:52:47.798Z\",\r\n        \"currency\": \"NGN\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}212\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n        \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    "
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with no  channelCode",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "8391fe39-c642-44b1-afdf-d1ac5a5f4af8",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 400\"] = responseCode.code === 400"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n       \"additionalInformation\": \"string\",\r\n        \"amount\": 39700.00,\r\n        \r\n        \"creationDateTime\": \"2018-05-07T11:52:47.798Z\",\r\n        \"currency\": \"NGN\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}213\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n        \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    "
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with no  instructedInstitutionCode",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "cc3533dc-f943-430f-9bbf-40a53dc360ab",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 400\"] = responseCode.code === 400"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"additionalInformation\": \"string\",   \r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"creationDateTime\": \"2018-05-07T11:52:47.798Z\",\r\n        \"instructedInstitutionCode\": \"\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}216\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n        \"targetVerificationNumberType\": \"BVN\",\r\n\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    "
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with no  currency",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "03228384-3ca9-4391-9e77-d232cefb7fc6",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 400\"] = responseCode.code === 400"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n       \"additionalInformation\": \"string\",\r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"\",\r\n        \"creationDateTime\": \"2018-05-07T11:52:47.798Z\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}215,\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n        \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    "
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with no  referenceCode",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7a141a27-5e8a-4252-bba8-30d212aee79d",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 400\"] = responseCode.code === 400"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"creationDateTime\": \"2018-05-07T11:52:47.798Z\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"additionalInformation\": \"string\",\r\n        \r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}217\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n         \"targetVerificationNumberType\": \"BVN\",\r\n         \"type\": \"BLOCK\"\r\n\r\n    }\r\n    "
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with no requestId",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "4a674f4b-e47e-4f18-855e-b9a2b3454dd4",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 400\"] = responseCode.code === 400"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"creationDateTime\": \"2018-05-07T11:52:47.798Z\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n       \"additionalInformation\": \"string\",\r\n        \"referenceCode\": \"7889765717955\",\r\n       \r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n        \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    "
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with no targetAccountNumber",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "43fce684-85ca-45a9-b554-e5ab39ae570d",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 400\"] = responseCode.code === 400"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"creationDateTime\": \"2018-05-07T11:52:47.798Z\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"additionalInformation\": \"string\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}219\",\r\n        \r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n        \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    "
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with no targetBankVerificationNumber",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f8ec840e-9881-442f-9077-b211e8b2630d",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 400\"] = responseCode.code === 400"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"additionalInformation\": \"string\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}220\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"\",\r\n        \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    "
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with no targetVerificationNumberType",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f8ec840e-9881-442f-9077-b211e8b2630d",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 400\"] = responseCode.code === 400"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"additionalInformation\": \"string\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}220\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"65768908765\",\r\n        \r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    "
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with no type",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5ac3fb2e-dfdd-417b-b626-53dea07e6a12",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 400\"] = responseCode.code === 400"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"creationDateTime\": \"2018-05-07T11:52:47.798Z\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"additionalInformation\": \"string\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}221\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n        \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"\"\r\n\r\n    }\r\n    "
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with random digit  additionalInformation",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7af2947c-d5af-4919-93f0-4b6c5e52e9fa",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 201\"] = responseCode.code === 201"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"creationDateTime\": \"2018-05-07T11:52:47.798Z\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"additionalInformation\": \"123455677\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}222\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n        \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    "
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with random digit  amount",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "fd6d6207-7e34-4269-bf23-5725c226ae66",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 400\"] = responseCode.code === 400"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"additionalInformation\": \"string\",      \r\n        \"amount\": 234567890,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"creationDateTime\": \"2018-05-07T11:52:47.798Z\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}223\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }"
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with random digit  channelCode",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "45addaa0-2ff4-4540-a035-4274d466bebc",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 400\"] = responseCode.code === 400"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"additionalInformation\": \"string\",      \r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 657,\r\n        \"currency\": \"NGN\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}223\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n        \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    "
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with random digit  creationDateTime",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7af2947c-d5af-4919-93f0-4b6c5e52e9fa",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 201\"] = responseCode.code === 201"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n         \"additionalInformation\": \"string\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}225\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n        \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    "
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with random digit  currency",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "6eda3da6-7083-4e83-b35c-78effb578557",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 400\"] = responseCode.code === 400"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"additionalInformation\": \"string\",      \r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"3456789\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}226\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n        \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }"
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with random digit  instructedInstitutionCode",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3b80a337-2e66-41a4-9924-701325248c37",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 400\"] = responseCode.code === 400"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"additionalInformation\": \"string\",      \r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"instructedInstitutionCode\": \"23452\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}227\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n        \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }"
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with random digit  referenceCode",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "a324a75a-5f95-4e85-b927-ffc22330c811",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 201\"] = responseCode.code === 201"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\n        \"additionalInformation\": \"string\",      \n        \"amount\": 39700.00,\n        \"channelCode\": 2,\n        \"currency\": \"NGN\",\n        \"instructedInstitutionCode\": \"002\",\n        \"referenceCode\": \"207689\",\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}228\",\n        \"targetAccountNumber\": \"7853184001\",\n        \"targetBankVerificationNumber\": \"22370230888\",\n        \"targetVerificationNumberType\": \"BVN\",\n        \"type\": \"BLOCK\"\n\n    }"
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with random digit  requestId",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7472ed90-b98b-4233-8ca8-78ddea216f48",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 400\"] = responseCode.code === 400"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"additionalInformation\": \"string\",      \r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"234567890675435678\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n        \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }"
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with random digit  targetAccountNumber",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c11d7b58-a1b1-46b7-a0ed-1f8b3616fe29",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 400\"] = responseCode.code === 400"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"additionalInformation\": \"string\",      \r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}230\",\r\n        \"targetAccountNumber\": \"12345678980\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n         \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }"
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with random digit targetBankVerificationNumber",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "4c535d22-29b8-4987-b45d-3a697718d97d",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 201\"] = responseCode.code === 201"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"additionalInformation\": \"string\",      \r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}231\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"23405678908k97\",\r\n         \"targetVerificationNumberType\": \"TIN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }"
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with random digit targetVerificationNumberType",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "6c526433-1303-433c-977d-bc7f103b80ca",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 400\"] = responseCode.code === 400"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"additionalInformation\": \"string\",      \r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}231\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"2340567890897\",\r\n        \"targetVerificationNumberType\": \"34567890\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }"
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with random digit type",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1207351e-7801-4ef4-98b9-e425cc15e352",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 400\"] = responseCode.code === 400"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"additionalInformation\": \"string\",      \r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}231\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n         \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"12345\"\r\n\r\n    }\r\n    \r\n"
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with special characters  additionalInformation",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "040fafac-a7bd-4ffe-b6f4-9385752110fc",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 201\"] = responseCode.code === 201"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"additionalInformation\": \"%$^&$^%&\",\n    \"amount\": 39700,\n    \"channelCode\": 2,\n    \"currency\": \"NGN\",\n    \"instructedInstitutionCode\": \"002\",\n    \"referenceCode\": \"7889765717955\",\n    \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}232\",\n    \"targetAccountNumber\": \"7853184001\",\n    \"targetBankVerificationNumber\": \"22370230888\",\n    \"targetVerificationNumberType\": \"BVN\",\n    \"type\": \"BLOCK\"\n}"
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with special characters  amount",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5e748730-0c7f-4589-8a47-af1c816b96b9",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 400\"] = responseCode.code === 400"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"additionalInformation\": \"string\",      \r\n        \"amount\": @|$#@,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}239\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n        \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    \r\n"
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with special characters channelCode",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "17c8a806-30d4-47cb-9999-98c55a34ae0f",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 400\"] = responseCode.code === 400"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"additionalInformation\": \"string\",      \r\n        \"amount\": 39700.00,\r\n        \"channelCode\": #,\r\n        \"currency\": \"NGN\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}234\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n        \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    \r\n"
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with special characters currency",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "0079761a-6e08-4fbb-b279-eeb3ce0646a4",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 400\"] = responseCode.code === 400"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"additionalInformation\": \"string\",      \r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"#%$^\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}235\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n        \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    "
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with special characters instructedInstitutionCode",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "a1c8e1f2-5089-4431-a9bc-451e76baef8f",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 400\"] = responseCode.code === 400"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"additionalInformation\": \"string\",      \r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"instructedInstitutionCode\": \"%^%\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}236\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n        \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    \r\n"
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with special characters referenceCode",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "118e257f-ecbb-4eb6-be3d-fba3485bf848",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 201\"] = responseCode.code === 201"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"additionalInformation\": \"string\",      \r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"referenceCode\": \"$#%^&*(\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}23\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n        \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    \r\n"
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with special characters requestId",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "d6171704-85b4-48a3-9596-140f706b5510",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 400\"] = responseCode.code === 400"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"additionalInformation\": \"string\",      \r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"@#$#%$^\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n        \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    \r\n"
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with special characters targetAccountNumber",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "dc136a74-5afc-4197-913b-a6090dacf0d4",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 400\"] = responseCode.code === 400"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"additionalInformation\": \"string\",      \r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}239\",\r\n        \"targetAccountNumber\": \"$%^&*()^&**\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n        \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    \r\n"
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with special characters targetBankVerificationNumber",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "b9167800-666d-49e3-b0f2-2881fe4e985a",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 400\"] = responseCode.code === 400"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"additionalInformation\": \"string\",      \r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}240\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"$#%^&*()&^\",\r\n        \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    \r\n"
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with special characters targetBankVerificationNumber Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "b9167800-666d-49e3-b0f2-2881fe4e985a",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 400\"] = responseCode.code === 400"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"additionalInformation\": \"string\",      \r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}352\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"43567688987\",\r\n        \"targetVerificationNumberType\": \"$#%^&*\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    \r\n"
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with special characters type",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "225046d0-5369-4ab4-a8f6-179fd5dbdd2c",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 400\"] = responseCode.code === 400"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"additionalInformation\": \"string\",      \r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}241\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n        \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"%%\"\r\n\r\n    }\r\n    \r\n"
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with ChannelCode that doesn't exist in the DB",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f6b1a6db-741d-4312-92d5-c435897a9f14",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 400\"] = responseCode.code === 400"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"additionalInformation\": \"string\",      \r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 0,\r\n        \"currency\": \"NGN\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}242\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    \r\n"
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with different ChannelCode with an existing RequestId",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "91bfb225-e043-4d30-99ac-2ce6594c199b",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 400\"] = responseCode.code === 400"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"additionalInformation\": \"string\",      \r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 1,\r\n        \"currency\": \"NGN\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"201805151225260024133258\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n        \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    \r\n"
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with instructedInstitutionCode that doesn't exist in the DB",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "ce9d161d-9fc4-4b17-8e8e-79f347454e48",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 400\"] = responseCode.code === 400"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"additionalInformation\": \"string\",      \r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"instructedInstitutionCode\": \"031\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}243\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n        \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    \r\n"
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock for a different instructedInstitutionCode and an existing RequestId",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "9f02785a-8769-4d8e-b737-e366f0b181fe",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 400\"] = responseCode.code === 400"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"additionalInformation\": \"string\",      \r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"instructedInstitutionCode\": \"001\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}243\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    \r\n"
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with an existing Request Id with different values for other parameters",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "f798f15c-3055-44cb-8409-ddcc64ee626e",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 400\"] = responseCode.code === 400"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"additionalInformation\": \"string\",      \r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"201804191225260054133256\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n        \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    \r\n"
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock with an existing Request Id with same values for other parameters",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "2edf9d13-cfad-4526-a035-64a3244aca92",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 400\"] = responseCode.code === 400"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"additionalInformation\": \"string\",      \r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"201804191225260054133256\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n        \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    \r\n"
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock for a TargetaccountNumber not in the instructedInstitutionCode",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3c6ece25-8966-4a0b-af12-62413c3e4537",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 404\"] = responseCode.code === 404"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"additionalInformation\": \"string\",      \r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}244\",\r\n        \"targetAccountNumber\": \"2129242982\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n        \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    \r\n"
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock for maximum acceptable values assigned for amount",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7af2947c-d5af-4919-93f0-4b6c5e52e9fa",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 201\"] = responseCode.code === 201"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"additionalInformation\": \"string\",      \r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}245\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n         \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    \r\n"
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock for maximum acceptable values assigned for channelCode",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7af2947c-d5af-4919-93f0-4b6c5e52e9fa",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 201\"] = responseCode.code === 201"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"additionalInformation\": \"string\",      \r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}246\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n         \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    \r\n"
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock for maximum acceptable values assigned for currency",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7af2947c-d5af-4919-93f0-4b6c5e52e9fa",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 201\"] = responseCode.code === 201"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"additionalInformation\": \"string\",      \r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}247\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n         \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    \r\n"
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock for maximum acceptable values assigned for instructedInstitutionCode",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7af2947c-d5af-4919-93f0-4b6c5e52e9fa",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 201\"] = responseCode.code === 201"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"additionalInformation\": \"string\",      \r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}248\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n         \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    \r\n"
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock for maximum acceptable values assigned for referenceCode",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7af2947c-d5af-4919-93f0-4b6c5e52e9fa",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 201\"] = responseCode.code === 201"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"additionalInformation\": \"string\",      \r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"referenceCode\": \"123456789012345678901234567890\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}249\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n         \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    \r\n"
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock for maximum acceptable values assigned for requestId",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7af2947c-d5af-4919-93f0-4b6c5e52e9fa",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 201\"] = responseCode.code === 201"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"additionalInformation\": \"string\",      \r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}250\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n         \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    \r\n"
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock for maximum acceptable values assigned for targetAccountNumber",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7af2947c-d5af-4919-93f0-4b6c5e52e9fa",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 201\"] = responseCode.code === 201"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"additionalInformation\": \"string\",      \r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}251\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n         \"targetVerificationNumberType\": \"BVN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    \r\n"
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock for maximum acceptable values assigned fortargetBankVerificationNumber",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7af2947c-d5af-4919-93f0-4b6c5e52e9fa",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 201\"] = responseCode.code === 201"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"additionalInformation\": \"string\",      \r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}252\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"12345678901234567890\",\r\n         \"targetVerificationNumberType\": \"TIN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    \r\n"
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock for maximum acceptable values assigned for targetVerificationNumberType",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7af2947c-d5af-4919-93f0-4b6c5e52e9fa",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 201\"] = responseCode.code === 201"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"additionalInformation\": \"string\",      \r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}354\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"12345678901234567890\",\r\n         \"targetVerificationNumberType\": \"TIN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    \r\n"
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request amount BlockUnblock for maximum acceptable values assigned for type",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7af2947c-d5af-4919-93f0-4b6c5e52e9fa",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 201\"] = responseCode.code === 201"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"additionalInformation\": \"string\",      \r\n        \"amount\": 39700.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"instructedInstitutionCode\": \"002\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}253\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n         \"targetVerificationNumberType\": \"TIN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    \r\n"
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				},
+				{
+					"name": "Request Amount Block Unblock with an amount  0 and below",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "226817b9-f9ae-4003-8f30-4279ab80522e",
+								"type": "text/javascript",
+								"exec": [
+									"tests[\"Status code is 400\"] = responseCode.code === 400"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"additionalInformation\": \"string\",      \r\n        \"amount\": 500.00,\r\n        \"channelCode\": 2,\r\n        \"currency\": \"NGN\",\r\n        \"instructedInstitutionCode\": \"0098\",\r\n        \"referenceCode\": \"7889765717955\",\r\n        \"requestId\": \"{{Year}}{{Month}}{{Day}}122415002{{$randomInt}}{{$randomInt}}253\",\r\n        \"targetAccountNumber\": \"7853184001\",\r\n        \"targetBankVerificationNumber\": \"22370230888\",\r\n         \"targetVerificationNumberType\": \"TIN\",\r\n        \"type\": \"BLOCK\"\r\n\r\n    }\r\n    \r\n"
+						},
+						"url": "https://apis.qa.arca-qa.com:443/amount-block-unblock/v1/amount/block/unblock"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

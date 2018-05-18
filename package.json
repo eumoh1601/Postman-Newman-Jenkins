@@ -1,0 +1,15 @@
+{
+  "name": "jenkins-cii",
+  "version": "1.0.0",
+  "description": "projects for storing postman test",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "api-test-QA": "newman run test/Postman-Newman-Jenkins.postman_collection.json"
+  },
+  "author": "Emem",
+  "dependencies": {
+    "newman": "^3.9.3"
+  }
+}
